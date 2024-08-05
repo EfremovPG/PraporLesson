@@ -43,10 +43,3 @@ class MainActivity : AppCompatActivity() {
                     } else formaterDeci
                 val txtResult: Any = forFormater.format(finalPrint)
 //                findViewById<EditText>(R.id.txt_result)
-            }
-//        txtResult}
-//            val txtResult: Any = fortFormater.format(finalPrint)
-        }
-    }
-}
-//findViewById<EditText>(R.id.txt_result)
