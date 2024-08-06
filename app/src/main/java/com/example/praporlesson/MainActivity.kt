@@ -3,12 +3,8 @@ package com.example.praporlesson
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-
+import kotlin.math.floor
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,12 +30,17 @@ class MainActivity : AppCompatActivity() {
                         }
 
                         else -> {
-                            ((Math.floor(userEnterPrice.toDouble() / sumRate)) * cashRate)
+                            ((floor(userEnterPrice.toDouble() / sumRate)) * cashRate)
                         }
                     }
                 val forFormater =
                     if (finalPrint % 1.0 == 0.toDouble()) {
                         formaterInt
                     } else formaterDeci
-                val txtResult: Any = forFormater.format(finalPrint)
+//                val txtResult: Any =
+                forFormater.format(finalPrint)
 //                findViewById<EditText>(R.id.txt_result)
+            }
+        }
+    }
+}
